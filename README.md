@@ -1,6 +1,3 @@
-# Toggle-Mac-Display-HDR
-This AppleScript allows you to automate the toggling of HDR on a display on MacOS
-
 # Toggle Mac Display HDR
 
 This AppleScript allows you to automate the toggling of using HDR of a display on MacOS. Useful when switching between watching HDR content (youtube, apple tv) to using regular applications.
