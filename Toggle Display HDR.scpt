@@ -19,3 +19,5 @@ tell application "System Events" to tell process "System Settings"
 	
 	click checkbox "High Dynamic Range" of group 3 of scroll area 2 of group 1 of group 2 of splitter group 1 of group 1 of window "Displays" of application process "System Settings" of application "System Events"
 end tell
+
+tell application "System Settings" to quit
