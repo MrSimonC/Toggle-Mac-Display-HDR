@@ -17,7 +17,14 @@ tell application "System Events" to tell process "System Settings"
 	repeat until exists group 3 of scroll area 2 of group 1 of group 2 of splitter group 1 of group 1 of window "Displays"
 	end repeat
 	
-	click checkbox "High Dynamic Range" of group 3 of scroll area 2 of group 1 of group 2 of splitter group 1 of group 1 of window "Displays" of application process "System Settings" of application "System Events"
+	try
+		click checkbox "High Dynamic Range" of group 3 of scroll area 2 of group 1 of group 2 of splitter group 1 of group 1 of window "Displays" of application process "System Settings" of application "System Events"
+	on error
+		# This script interacts with the macOS System Settings application using AppleScript.
+		# Specifically, it clicks the "High Dynamic Range" checkbox within the Displays settings.
+		# When HDR is turned on, Brightness becomes an extra control.
+		click checkbox "High Dynamic Range" of group 4 of scroll area 2 of group 1 of group 2 of splitter group 1 of group 1 of window "Displays" of application process "System Settings" of application "System Events"
+	end try
 end tell
 
 tell application "System Settings" to quit
