@@ -5,7 +5,7 @@ This AppleScript allows you to automate the toggling of using HDR of a display o
 Essentially it does the job one would have to do manually: Open System Preferences, go to Displays, click "High Dynamic Range".
 
 Tested with: 
-* MacOS Ventura (13.4.1(c)) August 2023
+* MacOS MacOS Tahoe 26.0 (Sep 2025)
 
 ## Instructions for use
 
